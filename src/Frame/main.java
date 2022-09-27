@@ -116,7 +116,7 @@ public class main extends javax.swing.JFrame {
     private void buttonEjecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonEjecutarActionPerformed
        //crear y escribir archivo
        String texto = this.textAreaPrincipal.getText();
-       String ruta = "C:\\Users\\Usuario\\Desktop\\proyectoCompiladores\\prueba.txt";
+       String ruta = "src\\proyectoCompiladores\\prueba.txt";
        archivo.crearArchivo(ruta);
        archivo.escribirArchivo(ruta, texto);
        //ejecutar cmd 

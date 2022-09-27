@@ -18,7 +18,7 @@ public class cmd {
         String resultado="";
       try {
             
-            String comando = "powershell Get-content \"C:/Users/Usuario/Desktop/proyectoCompiladores/prueba.txt\" | \"C:/Users/Usuario/Desktop/proyectoCompiladores/proyecto.exe\"";
+            String comando = "powershell Get-content \"src/proyectoCompiladores/prueba.txt\" | \"src/proyectoCompiladores/proyecto.exe\"";
             Process process = Runtime.getRuntime().exec("cmd /c "+comando);
             BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String resultOfExecution = null;
